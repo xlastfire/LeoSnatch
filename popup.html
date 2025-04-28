@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LeoSnatch</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      margin: 0;
+      width: 800px; /* Increased width */
+      max-width: 100%; /* Ensure it doesn't exceed the viewport width */
+      box-sizing: border-box;
+      background-color: #1e1e1e; /* Dark mode background */
+      color: #ffffff; /* Light text color */
+    }
+    textarea {
+      width: 100%;
+      height: 200px; /* Increased height */
+      margin-bottom: 20px;
+      padding: 10px;
+      box-sizing: border-box;
+      background-color: #2d2d2d;
+      color: #ffffff;
+      border: 1px solid #444444;
+      border-radius: 5px;
+    }
+    button {
+      width: 100%;
+      padding: 15px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: bold;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    h2 {
+      margin-bottom: 10px;
+      text-align: center;
+      font-size: 24px;
+    }
+    p#status {
+      margin-top: 10px;
+      font-size: 14px;
+      text-align: center;
+    }
+    .icon-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .icon-container img {
+      width: 100px;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="icon-container">
+    <img src="icon.png" alt="LeoSnatch Icon">
+  </div>
+  <h2>LeoSnatch</h2>
+  <textarea id="json-input" placeholder="Enter your prompts here..."></textarea>
+  <button id="process-prompts">Snatch Images</button>
+  <p id="status"></p>
+  <script src="popup.js"></script>
+</body>
+</html>
